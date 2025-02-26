@@ -1,0 +1,108 @@
+.mode-options {
+    padding: 15px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Checkbox group styling */
+.checkbox-group {
+    display: flex;
+    gap: 20px; /* Space between checkboxes */
+    align-items: center;
+}
+
+/* Dropdown container styling */
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between label and dropdown */
+}
+
+.dropdown-container .smaller-label {
+    margin-right: 10px;
+}
+
+.detail-label {
+    width: max(10%, 200px);
+    margin-right: 15px; /* Add space between the label and radio buttons */
+    font-size: 12px;
+    text-align: left; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reset-button-container {
+    display: flex;
+    margin-top: 15px; /* Add spacing from the content above */
+}
+
+.reset-button {
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #d32f2f; /* Red for emphasis */
+    border-color: #d32f2f;
+    
+}
+
+.reset-button:hover {
+    background-color: #f9e6e6; /* Subtle hover effect */
+    border-color: #d32f2f;
+}
+/* Table container for scrolling */
+.table-container {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    width: 100%; /* Ensure container spans full width */
+}
+
+.filters-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure equal column widths */
+    margin-top: 10px;
+}
+
+.filters-table tbody {
+    width: 100%; /* Ensure tbody spans full width */
+}
+
+.filter-cell {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    color: gray;
+    width: 20%; /* Equal widths for each cell */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.filter-active {
+    background-color: green;
+    color: white;
+}
+
+.filter-inactive {
+    background-color: white;
+    color: gray;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .filters-table {
+        width: 100%; /* Maintain full width */
+    }
+
+    .filters-table tbody {
+        width: 100%; /* Ensure tbody spans full width */
+    }
+
+    .filter-cell {
+        font-size: 12px; /* Adjust font size */
+        padding: 8px; /* Reduce padding */
+    }
+}

@@ -1,0 +1,2 @@
+|            requester |  objname |        RA |        De | exptime | count | obsmode | specmode | filter_ | ntelescope | binning | gain | priority | weight | objtype | comments | is_ToO |                               id | is_observable |
+| hhchoi1022@gmail.com | AT2025hp | 101.79665 | -10.42057 |     100 |     3 |    Spec |  specall |       g |         10 |       1 | 2750 |       50 |      1 | Request |          |      0 | 9cae6b9eec264295b06286ad898f82a3 |          True |

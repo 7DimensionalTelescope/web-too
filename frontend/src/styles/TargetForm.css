@@ -1,0 +1,212 @@
+.container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.group-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%; 
+}
+
+/* Optional styling for the toggle button */
+.collapse-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+    margin-left: auto; /* Push the toggle to the far right */
+    transition: color 0.3s ease;
+}
+
+.collapse-toggle:hover {
+    color: #0056b3;
+}
+
+.collapse-text {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.default-label {
+    width: 100px;
+    margin-right: 15px; /* Add space between the label and radio buttons */
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left; 
+}
+
+.smaller-label {
+    width: max(10%, 100px);
+    margin-right: 15px; /* Add space between the label and radio buttons */
+    font-size: 12px;
+    text-align: left; 
+}
+
+.input-field {
+    flex-grow: 1;
+    width: 100%; 
+}
+
+.submit-button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px; /* Add spacing between radio buttons */
+    font-size: 10px; 
+}
+
+.mode-options {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px; 
+    margin-top: 0px;
+    background-color: #f9f9f9
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 15px; /* Space between checkboxes */
+    align-items: center;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label and dropdown */
+}
+
+.dropdown-label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.collapse-toggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.collapse-toggle:hover {
+    color: #0056b3;
+}
+
+.collapse-text {
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bold-label {
+    font-weight: bold;
+    font-size: 14px; /* Optional: Adjust the font size */
+    color: #333; /* Optional: Adjust the color */
+}
+
+.observing-conditions-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.observing-conditions-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.observing-conditions-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.status-indicators-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 50%
+}
+
+.status-icon {
+    margin-right: 5px;
+}
+
+.status-icon.online {
+    color: green;
+}
+
+.status-icon.offline {
+    color: red;
+}
+
+.status-text {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.local-time {
+    display: flex;
+    align-items: center;
+}
+
+.time-text {
+    margin-left: 5px;
+    font-weight: bold;
+}
+.location-text {
+    margin-left: 5px;
+    font-style: italic;
+    color: #555;
+}
+
+
+.total-exposure {
+    font-weight: bold;
+    color: #818181;
+    width: 100%;
+    text-align: center;
+}
+.exposure-label {
+    margin-right: 30px;
+}

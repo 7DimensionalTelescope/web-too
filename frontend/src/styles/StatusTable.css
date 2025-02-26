@@ -1,0 +1,121 @@
+.container {
+    max-width: 100%; /* Ensure it fits inside the flexbox */
+    margin: 0;
+    padding: 0;
+    border: none; /* Remove redundant border */
+    box-shadow: none; /* Let App.css handle shadows */
+}
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 20px;
+    font-style: italic;
+    text-align: right;
+}
+
+.summary-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+}
+
+.summary-telescope {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.summary-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .summary-row {
+        flex-wrap: wrap;
+    }
+
+    .summary-item {
+        width: 18%; /* Adjust width for mobile */
+    }
+}
+
+/* General table styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scroll */
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+    word-wrap: break-word; /* Allow wrapping for long text */
+}
+
+@media (max-width: 768px) {
+    table:not(.filters-table) {
+        display: block; /* Table becomes scrollable */
+        overflow-x: auto;
+        white-space: nowrap; /* Prevent table content from breaking */
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 12px; /* Smaller font for mobile */
+    }
+
+    .summary-telescope, .summary-icon {
+        font-size: 12px;
+    }
+}
+
+/* Optional: Better scrolling experience */
+table::-webkit-scrollbar {
+    height: 6px;
+}
+
+table::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+}
+
+table::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

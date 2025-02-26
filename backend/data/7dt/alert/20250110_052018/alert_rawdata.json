@@ -1,0 +1,12 @@
+{
+    "requester": "hhchoi1022@gmail.com",
+    "objname": "AT 2025hp",
+    "RA": 101.79665,
+    "De": -10.42057,
+    "exptime": "100",
+    "count": "3",
+    "obsmode": "Spec",
+    "comments": "",
+    "is_ToO": false,
+    "specmode": "specall.specmode"
+}
