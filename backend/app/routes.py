@@ -1,23 +1,31 @@
-from flask import g, Blueprint, send_from_directory, request, jsonify
+from flask import g, Blueprint, send_from_directory, request, jsonify, json
 from flask_mail import Message
 from . import mail  # Import the mail instance from __init__.py
 import pandas as pd
 import os
 import json
 from datetime import datetime
-from .scripts.mainobserver import mainObserver
-from .scripts.staralt import Staralt
 from astropy.table import Table
 import numpy as np
 import base64
+from supy.observer import *
+from datetime import datetime, timezone
 
 from dotenv import load_dotenv
 load_dotenv()
 
+class DateTimeEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, datetime):
+            return obj.isoformat()  # or any other format you prefer
+        return super().default(obj)
+
 
 api_bp = Blueprint('api', __name__, static_folder='../../frontend/build')
+api_bp.json_encoder = DateTimeEncoder
 
 DATA_FOLDER = os.getenv('DATA_FOLDER', './data')
+
 
 @api_bp.route('/')
 def serve():
@@ -336,8 +344,7 @@ def get_staralt_data():
         star = Staralt(observer=observer)
 
         # Generate star altitude data
-        star.staralt_data(ra=ra, dec=dec, objname=objname, target_minalt=target_minalt, target_minmoonsep=target_minmoonsep)
-
+        star.set_target(ra=ra, dec=dec, objname=objname, target_minalt=target_minalt, target_minmoonsep=target_minmoonsep)
         # Return the data dictionary as JSON
         return jsonify(star.data_dict)
 
